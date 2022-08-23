@@ -35,11 +35,11 @@
     </p>
 </div>
 <div class="p-3 mb-2 bg-dark text-white">
-
+    <h2>
+        Kết quả sau tính toán
+    </h2>
 </div>
-<h2>
-    Kết quả sau tính toán
-</h2>
+
 <p> Lượng chiết khấu ${n4}</p>
 <p> Giá sau khi chiếu khấu ${n5}</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
