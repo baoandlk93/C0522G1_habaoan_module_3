@@ -17,20 +17,17 @@ public class CalculatorServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
 
-        float firstOperand = Integer.parseInt(request.getParameter("first-operand"));
-        float secondOperand = Integer.parseInt(request.getParameter("second-operand"));
+        float firstOperand = Integer.parseInt(request.getParameter("firstOperand"));
+        float secondOperand = Integer.parseInt(request.getParameter("secondOperand"));
         char operator = request.getParameter("operator").charAt(0);
+        float result = Calculator.calculate(firstOperand, secondOperand, operator);
 
-        PrintWriter writer = response.getWriter();
-        writer.println("<html>");
-        writer.println("<h1>Result:</h1>");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("display.jsp");
+        request.setAttribute("firstOperand", firstOperand);
+        request.setAttribute("secondOperand", secondOperand);
+        request.setAttribute("operator", operator);
+        request.setAttribute("result", result);
+        requestDispatcher.forward(request, response);
 
-        try {
-            float result = Calculator.calculate(firstOperand, secondOperand, operator);
-            writer.println(firstOperand + " " + operator + " " + secondOperand + " = " + result);
-        } catch (Exception ex) {
-            writer.println("Error: " + ex.getMessage());
-        }
-        writer.println("</html>");
     }
 }
