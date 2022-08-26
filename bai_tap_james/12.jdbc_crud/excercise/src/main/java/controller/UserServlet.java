@@ -61,9 +61,10 @@ public class UserServlet extends HttpServlet {
     private void sortByNameDESC(HttpServletRequest request, HttpServletResponse response) {
         listUser = userService.sortByNameDESC();
         request.setAttribute("user", listUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/list.jsp");
         try {
-            response.sendRedirect("/user");
-        } catch (IOException e) {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -71,19 +72,19 @@ public class UserServlet extends HttpServlet {
     private void sortByNameASC(HttpServletRequest request, HttpServletResponse response) {
         listUser = userService.sortByNameASC();
         request.setAttribute("user", listUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/list.jsp");
         try {
-            response.sendRedirect("/user");
-        } catch (IOException e) {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
-
     }
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         User existingUser = userService.selectUser(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/edit.jsp");
         request.setAttribute("user", existingUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/edit.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
