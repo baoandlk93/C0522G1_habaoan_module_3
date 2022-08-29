@@ -7,7 +7,7 @@ import java.util.List;
 public interface IUserRepository {
     List<User> displayAll();
 
-    public User selectUser(int id);
+     User selectUser(int id);
 
     boolean add(User user);
 

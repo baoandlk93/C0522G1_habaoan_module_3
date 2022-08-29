@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ec403c-3c3b-4bbd-adfb-516582b424af" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/CalculatorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/CalculatorServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +153,7 @@
       <workItem from="1661302193558" duration="915000" />
       <workItem from="1661324027780" duration="4027000" />
       <workItem from="1661329050319" duration="1159000" />
+      <workItem from="1661525607100" duration="69000" />
     </task>
     <servers />
   </component>

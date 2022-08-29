@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS khach_hang (
     so_dien_thoai VARCHAR(45),
     email VARCHAR(45),
     dia_chi VARCHAR(45),
-    trang_thai VARCHAR(45) DEFAULT 'Còn lưu trữ',
+    trang_thai BIT(1) DEFAULT '1',
     FOREIGN KEY (ma_loai_khach)
         REFERENCES loai_khach (ma_loai_khach)
 );
