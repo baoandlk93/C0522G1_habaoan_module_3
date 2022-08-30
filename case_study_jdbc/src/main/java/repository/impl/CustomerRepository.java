@@ -1,5 +1,6 @@
 package repository.impl;
 
+
 import model.person.Customer;
 import repository.BaseRepository;
 import repository.ICustomerRepository;
@@ -9,53 +10,37 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
-    private final String SELECT_ALL = "select * from customer";
+    private final String SELECT_ALL = "select*from customer;";
 
     @Override
     public List<Customer> displayAll() {
         List<Customer> customers = new ArrayList<>();
         Connection connection = BaseRepository.getConnectDB();
         try {
-            PreparedStatement pr = connection.prepareStatement(SELECT_ALL);
-            ResultSet resultSet = pr.executeQuery();
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL);
+            ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                String code = resultSet.getString("customerCode");
+                int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
-                String dateOfBirth = resultSet.getString("dateOfBirth");
-                String gender = resultSet.getString("gender");
-                long phoneNumber = resultSet.getLong("phoneNumber");
+                Date dayOfBirth = resultSet.getDate("date_of_birth");
+                boolean gender = resultSet.getBoolean("gender");
+                String idCard = resultSet.getString("id_card");
+                String phoneNumber = resultSet.getString("phone_number");
                 String email = resultSet.getString("email");
-                String customerType = resultSet.getString("customerType");
-                String customerAddress = resultSet.getString("customerAddress");
-                Customer customer = new Customer(name,dateOfBirth,gender,phoneNumber,email,code,customerType,customerAddress);
+                String customerAddress = resultSet.getString("address");
+                int customerTypeID = resultSet.getInt("customer_type_id");
+                Customer customer = new Customer(id, name, dayOfBirth, gender, idCard, phoneNumber, email, customerAddress, customerTypeID);
                 customers.add(customer);
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return customers;
-    }
-
-    @Override
-    public boolean add(Customer customer) {
-        return false;
-    }
-
-    @Override
-    public boolean edit(Customer customer) {
-        return false;
-    }
-
-    @Override
-    public boolean delete(int id) {
-        return false;
-    }
-
-    @Override
-    public Customer selectCustomer(int id) {
-        return null;
     }
 }

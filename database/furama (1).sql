@@ -1,6 +1,6 @@
+-- drop database furama_web;
 CREATE DATABASE IF NOT EXISTS  furama_web;
-
-USE furama_web;
+-- USE furama_webcustomer-- 
 
 CREATE TABLE IF NOT EXISTS `role` (
     role_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -82,7 +82,6 @@ CREATE TABLE IF NOT EXISTS customer (
     gender BIT(1) NOT NULL,
     date_of_birth DATE NOT NULL,
     id_card VARCHAR(12) NOT NULL UNIQUE,
-    salary DOUBLE NOT NULL CHECK (salary >= 3000000),
     phone_number VARCHAR(12) NOT NULL,
     email VARCHAR(45),
     address VARCHAR(50),
@@ -147,7 +146,7 @@ CREATE TABLE IF NOT EXISTS attach_facility (
     is_delete BIT DEFAULT 0
 );
 
-CREATE TABLE IF NOT EXISTS contrat_detail (
+CREATE TABLE IF NOT EXISTS contract_detail (
     id INT AUTO_INCREMENT PRIMARY KEY,
     contract_id INT,
     attach_facility_id INT,
@@ -158,3 +157,4 @@ CREATE TABLE IF NOT EXISTS contrat_detail (
     FOREIGN KEY (attach_facility_id)
         REFERENCES attach_facility (id)
 );
+

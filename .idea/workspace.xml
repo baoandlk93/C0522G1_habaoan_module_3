@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d952af9c-77e5-49de-aca0-9c5e6d56a93c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/excercise/src/main/java/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/artifacts/practice_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_james/14.dependency_management/practice/src/main/java/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/AttachFacility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/facility/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/facility/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/IFacilityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/FacilityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/view/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/view/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/view/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Contract.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Contract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Facility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/person/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/person/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/person/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/person/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/model/person/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/ICustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/IEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/IHouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/IRoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/IVillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/HouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/RoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/repository/impl/VillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/IBookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/IHouseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/IRoomService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/service/IVillaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-10.0.23/apache-tomcat-9.0.65/webapps/ROOT/view/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_james/12.jdbc_crud/practice/databasse.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_james/12.jdbc_crud/practice/databasse.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_james/8.Bootstrap Cơ Bản/case_study/FormEditg.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_james/8.Bootstrap Cơ Bản/case_study/FormEditg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Contract.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Contract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Facility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/person/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/person/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/person/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/person/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/model/person/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/ICustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/IEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/IHouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/IRoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/IVillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/HouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/RoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/repository/impl/VillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/IBookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/IHouseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/IRoomService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/classes/java/main/service/IVillaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/libs/case_study_jdbc-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/libs/case_study_jdbc-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Facility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/model/person/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/IEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/IHouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/IRoomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/IVillaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/HouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/RoomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/repository/impl/VillaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/IBookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/IEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/IHouseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/IRoomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/java/service/IVillaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_jdbc/src/main/webapp/view/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/Facility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/person/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/person/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/model/person/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/IEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/IHouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/IRoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/IVillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/impl/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/impl/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/impl/HouseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/impl/RoomRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/repository/impl/VillaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/IBookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/IHouseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/IRoomService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/classes/java/main/service/IVillaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/libs/castudy_jdbc-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/config/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/Contract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/Facility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/person/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/person/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/model/person/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/IEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/IHouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/IRoomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/IVillaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/impl/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/impl/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/impl/HouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/impl/RoomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/repository/impl/VillaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/IBookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/IEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/IHouseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/IRoomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/java/service/IVillaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/castudy_jdbc/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/furama (1).sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/furama (1).sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowchat_erd.mwb.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/build/classes/java/main/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/build/libs/server_time-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/src/main/java/ServerTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_time/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E26MIVGGdS7q26jDUniSqN8ySp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d952af9c-77e5-49de-aca0-9c5e6d56a93c" name="Changes" comment="" />
+      <created>1661781284757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661781284757</updated>
+      <workItem from="1661781287714" duration="788000" />
+      <workItem from="1661822798924" duration="2411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

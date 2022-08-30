@@ -1,61 +1,85 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: TUF
-  Date: 27/08/2022
-  Time: 12:51 CH
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<h1 style="background-color: #7abaff; text-align: center">Customer List</h1>
-<table class="table table-bordered table-striped table-responsive table-info table-active">
-    <thead>
-    <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Birthday</th>
-        <th scope="col">Gender</th>
-        <th scope="col">ID card</th>
-        <th scope="col">Phone Number</th>
-        <th scope="col">Email</th>
-        <th scope="col">Customer Type ID</th>
-        <th scope="col">Address</th>
-        <th scope="col">Edit</th>
-        <th scope="col">Delete</th>
-    </tr>
-    </thead>
-    <tbody>
-    <c:forEach items="${customers}" var="customers">
-        <tr>
-            <td><c:out value="${customers.name}"></c:out></td>
-            <td><c:out value="${customers.dateOfBirth}"></c:out></td>
-            <td><c:out value="${customers.gender}"></c:out></td>
-            <td><c:out value="${customers.id}"></c:out></td>
-            <td><c:out value="${customers.phoneNumber}"></c:out></td>
-            <td><c:out value="${customers.customerType}"></c:out></td>
-            <td><c:out value="${customers.customerAddress}"></c:out></td>
-            <td>
-                <a href="/user?action=edit&id=${user.id}"><i class="fa-solid fa-pen-to-square"></i></a>
-            </td>
-            <td>
-                <button onclick="objdelete('${user.id}' ,'${user.name}')"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <a href="#"><i class="fa-solid fa-trash-can"></i></a>
-                </button>
+<%@include file="/view/header.jsp" %>
 
-            </td>
+<div class="p-3">
+    <h2 class="text-center fw-bold">CUSTOMER LIST</h2>
+
+    <a href="/customer?action=create">
+        <button class="btn btn-success btn-sm my-2">
+            <span class="fa-solid fa-person-circle-plus text-light h5 my-auto me-1"></span> Add new Customer</button>
+    </a>
+
+    <table class="table table-striped table-bordered border border-3 border-secondary">
+        <tr class="text-center bg-info">
+            <th>Number</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Id card</th>
+            <th>Phone number</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Customer type</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
-    </c:forEach>
 
-    </tbody>
-</table>
+        <c:forEach varStatus="status" var="customer" items="${customers}">
+            <tr>
+                <td class="text-center">${status.count}</td>
+                <td>${customer.name}</td>
+                <td class="text-center">${customer.dateOfBirth}</td>
+                <c:if test="${customer.gender}">
+                    <td class="text-center">Male</td>
+                </c:if>
+                <c:if test="${!customer.gender}">
+                    <td class="text-center">Female</td>
+                </c:if>
+                <td class="text-center">${customer.idCard}</td>
+                <td class="text-center">${customer.phoneNumber}</td>
+                <td>${customer.email}</td>
+                <td>${customer.customerAddress}</td>
+                <c:forEach var="customerType" items="${customerTypeList}">
+                    <c:if test="${customerType.customerTypeID == customer.customerTypeID}">
+                        <td class="text-center">${customerType.customerTypeName}</td>
+                    </c:if>
+                </c:forEach>
+                <td class="text-center"><a href="/customer?action=edit&id=${user.getId()}">
+                    <span class="fa-solid fa-user-pen text-primary h4 m-auto"></span>
+                </a></td>
+                <td class="text-center"><a href="/customer?action=delete&id=${user.getId()}">
+                    <span class="fa-solid fa-person-circle-minus text-danger h4 m-auto"></span>
+                </a></td>
+            </tr>
+        </c:forEach>
+    </table>
+
+    <a href="/"><i class="fa-solid fa-house-chimney h5 mx-1"></i> Back to HOME</a>
+</div>
+
+<%@include file="/view/footer.jsp" %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 </html>
