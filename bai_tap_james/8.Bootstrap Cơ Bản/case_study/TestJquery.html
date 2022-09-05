@@ -1,0 +1,128 @@
+<%--
+Created by IntelliJ IDEA.
+User: TUF
+Date: 02/09/2022
+Time: 3:18 CH
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        .toggler {
+            width: 500px;
+            height: 200px;
+        }
+
+        #button {
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        #effect {
+            width: 240px;
+            height: 170px;
+            padding: 0.4em;
+            position: relative;
+        }
+
+        #effect h3 {
+            margin: 0;
+            padding: 0.4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<select id="service" onchange="myFunction(this.value)">
+    <option> -- Choose --</option>
+    <option value="villa">Villa</option>
+    <option value="room"> Room</option>
+    <option value="house"> House</option>
+</select>
+
+<form method="post">
+    <div class="container-fluid">
+        <div class="input-group">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="name" placeholder="Service Name">
+        </div>
+        <div class="input-group">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="area" placeholder="Service Area">
+        </div>
+        <div class="input-group ">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="cost" placeholder="Service Cost">
+        </div>
+        <div class="input-group">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="maxPeople" placeholder="Service Max People">
+        </div>
+        <div class="input-group">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="rentTypeID" placeholder="Rent Type ID">
+        </div>
+        <div class="input-group" id="villa1" style="display: none">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="standardRoom" placeholder="Standard Room">
+        </div>
+        <div class="input-group" id="villa2" style="display: none">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="descriptionOtherConvenience"
+                   placeholder="Description Other Convenience">
+        </div>
+        <div class="input-group" id="villa3" style="display: none">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="poolArea" placeholder="Pool Area">
+        </div>
+        <div class="input-group" id="villa4" style="display: none">
+            <p class="input-group-text"></p>
+            <input type="text" class="form-control" name="numberOfFloors" placeholder="Number Of Floors">
+        </div>
+        <div class="input-group" id="room" style="display: none">
+            <p class="input-group-text intro">
+                <input type="text" class="form-control" name="facilityFree" placeholder="Free Service">
+            </p>
+
+        </div>
+        <div class="input-group">
+            <button class="btn btn-lg btn-success" type="submit" value="create">Create</button>
+        </div>
+    </div>
+    <button>Click me</button>
+</form>
+<script>
+    function myFunction(value) {
+        switch (value) {
+            case "villa":
+                document.getElementById("villa1").style.display = "block";
+                document.getElementById("villa2").style.display = "block";
+                document.getElementById("villa3").style.display = "block";
+                document.getElementById("villa4").style.display = "block";
+                break;
+            case "house":
+                document.getElementById("villa1").style.display = "none";
+                document.getElementById("villa2").style.display = "none";
+                document.getElementById("villa3").style.display = "none";
+                document.getElementById("villa4").style.display = "none";
+                document.getElementById("villa1").style.display = "block";
+                document.getElementById("villa2").style.display = "block";
+                document.getElementById("villa4").style.display = "block";
+                break;
+            case "room":
+                document.getElementById("villa1").style.display = "none";
+                document.getElementById("villa2").style.display = "none";
+                document.getElementById("villa3").style.display = "none";
+                document.getElementById("villa4").style.display = "none";
+                document.getElementById("room").style.display = "block";
+                break;
+            default:
+
+        }
+    }
+</script>
+</body>
+</html>

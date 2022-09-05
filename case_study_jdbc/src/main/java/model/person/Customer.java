@@ -6,7 +6,7 @@ import java.util.Date;
 public class Customer {
     private int id;
     private String name;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private boolean gender;
     private String idCard;
     private String phoneNumber;
@@ -19,7 +19,7 @@ public class Customer {
 
     public Customer(int id,
                     String name,
-                    Date dateOfBirth,
+                    String dateOfBirth,
                     boolean gender,
                     String idCard,
                     String phoneNumber,
@@ -27,6 +27,17 @@ public class Customer {
                     String customerAddress,
                     int customerTypeID) {
         this.id = id;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.idCard = idCard;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.customerAddress = customerAddress;
+        this.customerTypeID = customerTypeID;
+    }
+
+    public Customer(String name, String dateOfBirth, boolean gender, String idCard, String phoneNumber, String email, String customerAddress, int customerTypeID) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -53,11 +64,11 @@ public class Customer {
         this.name = name;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

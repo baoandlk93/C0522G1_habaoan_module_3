@@ -5,7 +5,7 @@ import java.util.Date;
 public class Employee {
     private int id;
     private String name;
-    private Date dayOfBirth;
+    private String dayOfBirth;
     private String idCard;
     private double salary;
     private String phoneNumber;
@@ -19,17 +19,31 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(int id, String name, String dayOfBirth, String idCard, String phoneNumber, String email, String employeeAddress, int position, int educationDegreeID, int divisionID, double salary) {
+        this.id = id;
+        this.name = name;
+        this.dayOfBirth = dayOfBirth;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.employeeAddress = employeeAddress;
+        this.position = position;
+        this.educationDegreeID = educationDegreeID;
+        this.divisionID = divisionID;
+    }
+
     public Employee(int id,
                     String name,
-                    Date dayOfBirth,
+                    String dayOfBirth,
                     String idCard,
-                    double salary,
                     String phoneNumber,
                     String email,
                     String employeeAddress,
                     int position,
                     int educationDegreeID,
                     int divisionID,
+                    double salary,
                     String userName) {
         this.id = id;
         this.name = name;
@@ -43,6 +57,19 @@ public class Employee {
         this.educationDegreeID = educationDegreeID;
         this.divisionID = divisionID;
         this.userName = userName;
+    }
+
+    public Employee(String name, String dayOfBirth, String idCard, String phoneNumber, String email, String employeeAddress, int position, int educationDegreeID, int divisionID, double salary) {
+        this.name = name;
+        this.dayOfBirth = dayOfBirth;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.employeeAddress = employeeAddress;
+        this.position = position;
+        this.educationDegreeID = educationDegreeID;
+        this.divisionID = divisionID;
     }
 
     public int getId() {
@@ -61,11 +88,11 @@ public class Employee {
         this.name = name;
     }
 
-    public Date getDayOfBirth() {
+    public String getDayOfBirth() {
         return dayOfBirth;
     }
 
-    public void setDayOfBirth(Date dayOfBirth) {
+    public void setDayOfBirth(String dayOfBirth) {
         this.dayOfBirth = dayOfBirth;
     }
 

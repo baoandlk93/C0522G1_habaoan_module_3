@@ -2,14 +2,14 @@ package model.person;
 
 public class Division {
     private int id;
-    private String divisionName;
+    private String name;
 
     public Division() {
     }
 
-    public Division(int id, String divisionName) {
+    public Division(int id, String name) {
         this.id = id;
-        this.divisionName = divisionName;
+        this.name = name;
     }
 
     public int getId() {
@@ -20,11 +20,11 @@ public class Division {
         this.id = id;
     }
 
-    public String getDivisionName() {
-        return divisionName;
+    public String getName() {
+        return name;
     }
 
-    public void setDivisionName(String divisionName) {
-        this.divisionName = divisionName;
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FacilityRepository implements IFacilityRepository {
-    private static final String SELECT_ALL = "select*from facility";
+    private static final String SELECT_ALL = "select * from facility;";
 
     @Override
     public List<Facility> displayAll() {
@@ -34,12 +34,14 @@ public class FacilityRepository implements IFacilityRepository {
                 double poolArea = resultSet.getDouble("pool_area");
                 int numberOfFloors = resultSet.getInt("number_of_floors");
                 String facilityFree = resultSet.getString("facility_free");
-                Facility facility = new Facility(id,name,area,)
+                Facility facility = new Facility(id,name,area,cost,maxPeople,rentTypeID,facilityTypeID,standardRoom,descriptionOtherConvenience,
+                        poolArea,numberOfFloors,facilityFree);
+                facilities.add(facility);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return facilities;
     }
 
     @Override

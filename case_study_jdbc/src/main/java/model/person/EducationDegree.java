@@ -1,17 +1,15 @@
 package model.person;
 
-import java.awt.*;
-
 public class EducationDegree {
     private int id;
-    private String educationDegreeName;
+    private String name;
 
     public EducationDegree() {
     }
 
-    public EducationDegree(int id, String educationDegreeName) {
+    public EducationDegree(int id, String name) {
         this.id = id;
-        this.educationDegreeName = educationDegreeName;
+        this.name = name;
     }
 
     public int getId() {
@@ -22,12 +20,12 @@ public class EducationDegree {
         this.id = id;
     }
 
-    public String getEducationDegreeName() {
-        return educationDegreeName;
+    public String getName() {
+        return name;
     }
 
-    public void setEducationDegreeName(String educationDegreeName) {
-        this.educationDegreeName = educationDegreeName;
+    public void setName(String name) {
+        this.name = name;
     }
 }
 

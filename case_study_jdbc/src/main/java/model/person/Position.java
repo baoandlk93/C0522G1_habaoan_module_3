@@ -2,14 +2,14 @@ package model.person;
 
 public class Position {
     private int id;
-    private String positionName;
+    private String name;
 
     public Position() {
     }
 
-    public Position(int id, String positionName) {
+    public Position(int id, String name) {
         this.id = id;
-        this.positionName = positionName;
+        this.name = name;
     }
 
     public int getId() {
@@ -20,11 +20,11 @@ public class Position {
         this.id = id;
     }
 
-    public String getPositionName() {
-        return positionName;
+    public String getName() {
+        return name;
     }
 
-    public void setPositionName(String positionName) {
-        this.positionName = positionName;
+    public void setName(String name) {
+        this.name = name;
     }
 }

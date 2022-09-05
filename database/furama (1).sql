@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS education_degree (
 CREATE TABLE IF NOT EXISTS employee (
     id INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(50) NOT NULL,
-    date_of_birth DATE NOT NULL,
+    date_of_birth varchar(50) NOT NULL,
     id_card VARCHAR(12) NOT NULL UNIQUE,
     salary DOUBLE NOT NULL CHECK (salary >= 3000000),
     phone_number VARCHAR(12) NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS customer (
         REFERENCES customer_type (id),
     `name` VARCHAR(50) NOT NULL,
     gender BIT(1) NOT NULL,
-    date_of_birth DATE NOT NULL,
+    date_of_birth varchar(50) NOT NULL,
     id_card VARCHAR(12) NOT NULL UNIQUE,
     phone_number VARCHAR(12) NOT NULL,
     email VARCHAR(45),
@@ -119,6 +119,7 @@ CREATE TABLE IF NOT EXISTS facility (
     facility_free TEXT,
     is_delete BIT DEFAULT 0
 );
+select * from facility;
 
 CREATE TABLE IF NOT EXISTS contract (
     id INT AUTO_INCREMENT PRIMARY KEY,

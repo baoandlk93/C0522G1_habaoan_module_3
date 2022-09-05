@@ -9,14 +9,16 @@
 <div class="row p-4 bg-primary text-white text-center">
   <div class="col-sm-2">
     <a class="navbar-brand " href="index.jsp">
-      <img src="https://beedesign.com.vn/wp-content/uploads/2020/08/thiet-ke-logo-chu-b-brew.png"
+      <img src="https://furamavietnam.com/wp-content/uploads/2018/10/logo.png"
            width="128px"
            height="128px">
     </a>
   </div>
   <div class="col-sm-8">
-    <p class="card-text">Thời gian không chờ đợi một ai <br> Vì vậy hãy biết tận dụng tối đa thời
-      gian vào những điều quan trọng trong cuộc sống !!! </p>
+    <p class="card-text">
+      <i class="fa-solid fa-location-dot"></i> 103 – 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng, Việt Nam
+      7.0 km từ Sân bay Quốc tế Đà Nẵng
+    </p>
   </div>
   <div class="col-sm-2">
     <div class="card text-dark bg-info ">
@@ -45,8 +47,8 @@
             Employee
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">List of Employee</a></li>
-            <li><a class="dropdown-item" href="#">Add new Employee</a></li>
+            <li><a class="dropdown-item" href="/employee">List of Employee</a></li>
+            <li><a class="dropdown-item" href="/employee?action=create">Add new Employee</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown m-1 ">
@@ -65,8 +67,8 @@
             Service
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">List of Service</a></li>
-            <li><a class="dropdown-item" href="#">Add new Service</a></li>
+            <li><a class="dropdown-item" href="/facility">List of Service</a></li>
+            <li><a class="dropdown-item" href="/facility?action=create">Add new Service</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown m-1 ">
@@ -75,8 +77,8 @@
             Contract
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">List of Contract</a></li>
-            <li><a class="dropdown-item" href="#">Add new Contract</a></li>
+            <li><a class="dropdown-item" href="/contract">List of Contract</a></li>
+            <li><a class="dropdown-item" href="/contract?action=create">Add new Contract</a></li>
           </ul>
         </li>
       </ul>
