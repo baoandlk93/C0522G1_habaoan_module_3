@@ -9,12 +9,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
     private final String SELECT_ALL = "select * from employee where is_delete = 0";
-    private static final String UPDATE = "update employee set name = ?, set date_of_birth = ?, set id_card = ?, set phone_number = ?, set email = ?, set address = ?,set position_id = ?,set education_degree_id = ?, set division_id = ?,set user_name = ?, set salary = ? where id = ? ";
+    private static final String UPDATE = "update employee set name = ?, date_of_birth = ?, id_card = ?, phone_number = ?, email = ?, address = ?, position_id = ?, education_degree_id = ?,  division_id = ?, salary = ? where id = ? ";
     private static final String DELETE = "update employee set is_delete = 1 where id = ?;";
     private static final String SELECT_BY_ID = "select * from employee where id = ?";
     private static final String INSERT = "INSERT INTO employee (name, date_of_birth, id_card, phone_number, email, address,position_id,education_degree_id,division_id,salary) VALUES( ?, ?, ?, ?,?, ?, ?,?,?,?)";
@@ -70,7 +69,7 @@ public class EmployeeRepository implements IEmployeeRepository {
         try {
             PreparedStatement statement = connection.prepareStatement(INSERT);
             statement.setString(1, employee.getName());
-            statement.setString(2, employee.getDayOfBirth());
+            statement.setString(2, employee.getDateOfBirth());
             statement.setString(3, employee.getIdCard());
             statement.setString(4, employee.getPhoneNumber());
             statement.setString(5, employee.getEmail());
@@ -94,7 +93,7 @@ public class EmployeeRepository implements IEmployeeRepository {
         try {
             PreparedStatement statement = connection.prepareStatement(UPDATE);
             statement.setString(1, employee.getName());
-            statement.setString(2, employee.getDayOfBirth());
+            statement.setString(2, employee.getDateOfBirth());
             statement.setString(3, employee.getIdCard());
             statement.setString(4, employee.getPhoneNumber());
             statement.setString(5, employee.getEmail());

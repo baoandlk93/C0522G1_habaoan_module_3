@@ -21,6 +21,9 @@
     <!--        <script src="../../../bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>-->
 
     <style>
+        /**{*/
+        /*    overflow-x: hidden;*/
+        /*}*/
         a {
             text-decoration: none;
         }
@@ -33,6 +36,25 @@
 </head>
 <body>
 <jsp:include page="view/header.jsp"/>
+<c:if test="${mess!=null}">
+    <c:if test="${check}">
+        <div class="justify-content-center d-flex">
+            <div class="alert alert-success alert-dismissible fade show w-50">
+                <strong>Congratulations!</strong> ${mess}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </c:if>
+
+    <c:if test="${!check}">
+        <div class="justify-content-center d-flex">
+            <div class="alert alert-danger alert-dismissible fade show w-50">
+                <strong>Sorry!</strong> ${mess}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </c:if>
+</c:if>
 <div class="row container-fluid">
     <div class="col-sm-4">
         <h2>About Me</h2>

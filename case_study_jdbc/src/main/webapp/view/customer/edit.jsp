@@ -17,9 +17,11 @@
         body {
             background-color: #B5C8FF;
         }
+
         a {
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -27,6 +29,14 @@
 </head>
 <%@include file="/view/header.jsp" %>
 <body>
+<%
+    HttpSession session1 = request.getSession(false);
+    if (session1 != null && session1.getAttribute("role").equals("ADMIN")) {
+%>
+<p>Welcome, <%= session1.getAttribute("username") %>
+</p>
+<p>You have admin privileges</p>
+
 <div class="mx-5 px-5 pt-3">
     <h2 class="text-center fw-bold">Update Customer</h2>
     <c:if test="${mess!=null}">
@@ -51,7 +61,6 @@
 
 
     <div class="d-flex justify-content-center">
-
         <form class="w-50 border border-2 border-success p-3 bg-info rounded" method="post">
             <div class="form-group" hidden>
                 <label class="h6">Customer:</label>
@@ -60,7 +69,6 @@
                     <span class="input-group-text"> <i class="fa-solid fa-person-circle-question"></i></span>
                 </div>
             </div>
-
             <div class="form-group">
                 <label for="name" class="h6">Name:</label>
                 <div class="input-group">
@@ -68,28 +76,24 @@
                     <span class="input-group-text"> <i class="fa-solid fa-person-circle-question"></i></span>
                 </div>
             </div>
-
             <div class="mt-3 form-group">
-                <label for="dateOfBirth" class="h6">Date of Birth:</label>
-                <input type="date" id="dateOfBirth" class="form-control" name="dateOfBirth"
-                       value="${customers.dateOfBirth}">
+                <label for="dateOfBirth" class="h6">
+                    Date of Birth:</label>
+                <input type="date" id="dateOfBirth" class="form-control" name="dateOfBirth" value="${customers.dateOfBirth}"/>
             </div>
-
             <div class="mt-3 form-group">
                 <label class="h6">Gender:</label>
                 <div class="d-flex">
                     <label class="d-block me-4">
-                        <input type="radio" value="1" name="gender" checked> Male
+                        <input type="radio" value="0" name="gender" checked> Male
                         <i class="fa-solid fa-mars"></i>
                     </label>
                     <label class="d-block">
-                        <input type="radio" value="0" name="gender"> Female
+                        <input type="radio" value="1" name="gender"> Female
                         <i class="fa-solid fa-venus"></i>
                     </label>
                 </div>
-
             </div>
-
             <div class="mt-3 form-group">
                 <label for="idCard" class="h6">Id card:</label>
                 <div class="input-group">
@@ -102,7 +106,7 @@
             <div class="mt-3 form-group">
                 <label for="phone" class="h6">Phone number:</label>
                 <div class="input-group">
-                    <input type="text" id="phone" class="form-control" name="phone" value="${customers.phoneNumber}">
+                    <input type="text" id="phone" class="form-control" name="phoneNumber" value="${customers.phoneNumber}">
                     <span class="input-group-text"><i class="fa-solid fa-square-phone"></i></span>
                 </div>
             </div>
@@ -118,7 +122,7 @@
             <div class="mt-3 form-group">
                 <label for="address" class="h6">Address:</label>
                 <div class="input-group">
-                    <input type="text" id="address" class="form-control" name="address"
+                    <input type="text" id="address" class="form-control" name="customerAddress"
                            value="${customers.customerAddress}">
                     <span class="input-group-text"><i class="fa-solid fa-map-location-dot"></i></span>
                 </div>
@@ -127,7 +131,7 @@
             <div class="mt-3 form-group">
                 <label class="h6" for="customerType">Customer Type:</label>
                 <div class="input-group">
-                    <select id="customerType" class="form-control" name="customerType">
+                    <select id="customerType" class="form-control" name="customerTypeId">
                         <c:forEach var="customerType" items="${customerTypes}">
                             <option value="${customerType.id}">${customerType.name}</option>
                         </c:forEach>
@@ -144,6 +148,11 @@
         </form>
     </div>
 </div>
+<%
+    } else {
+        response.sendRedirect("login.jsp");
+    }
+%>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

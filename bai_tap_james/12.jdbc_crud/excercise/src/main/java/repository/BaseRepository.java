@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseRepository {
-    private static final String URL ="jdbc:mysql://localhost:3306/demo";
+    private static final String URL ="jdbc:mysql://localhost:3306/demo?createIfNotExists=true";
     private static final String USER ="root";
-    private static final String PASS ="habaoan93";
+    private static final String PASS ="12345678";
     public static Connection getConnectDB(){
         Connection connection = null;
         try {

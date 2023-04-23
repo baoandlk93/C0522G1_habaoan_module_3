@@ -8,6 +8,9 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,18 +39,18 @@
 
 
     <div class="row ">
-        <div class="col-sm-3">
+<%--        <div class="col-sm-3">--%>
 
-        </div>
+<%--        </div>--%>
 
 
-        <div class="col-sm-9">
+        <div class="col-sm-12">
 
 
             <div style="text-align: center">
-                <table id="tableContract" class="table table-striped">
+                <table id="tableContract" class="table table-striped table-bordered border border-3 border-secondary">
                     <thead>
-                    <tr style="background: aquamarine">
+                    <tr class="text-center bg-info">
                         <th>STT</th>
                         <th>Dịch vụ</th>
                         <th>Khách hàng</th>
@@ -61,7 +64,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach varStatus="status" var="contract" items="${contractList}">
+                    <c:forEach varStatus="status" var="contract" items="${contracts}">
                         <tr>
                             <td>${status.count}</td>
                             <td>
@@ -93,8 +96,12 @@
                             </td>
                             <td>${contract.startDay}</td>
                             <td>${contract.endDay}</td>
-                            <td>${contract.deposit}</td>
-                            <td></td>
+                            <td>
+                                <fmt:formatNumber type="number" value="${contract.deposit}" groupingUsed="false" />
+                            </td>
+                            <td>
+                                <fmt:formatNumber type="number" value="${contract.deposit}" groupingUsed="false" />
+                            </td>
                             <td>
                                 <a href="#">
                                     <button type="button" class="btn btn-primary">+</button>

@@ -21,16 +21,24 @@
 </head>
 <body>
 <%@include file="/view/header.jsp" %>
-<form  method="post">
+<%
+    // Kiểm tra vai trò của người dùng
+    HttpSession httpSession = request.getSession(false);
+    if (httpSession != null && httpSession.getAttribute("role").equals("ADMIN")) {
+%>
+<p>Welcome, <%= httpSession.getAttribute("username") %>
+</p>
+<form method="post">
     <div class="container-fluid">
         <div class="input-group">
             <p class="input-group-text"></p>
-            <input type="text" class="form-control" name ="name" placeholder="Customer Name">
+            <input type="text" class="form-control" name="name" placeholder="Customer Name">
         </div>
         <div class="input-group">
             <p class="input-group-text"></p>
-            <p><input type = "text"   id = "datepicker" name="dayOfBirth" class="form-control" placeholder="Customer Birthday"></p>
-<%--            <input type="date" name="dayOfBirth">--%>
+            <p><input type="text" id="datepicker" name="dayOfBirth" class="form-control"
+                      placeholder="Customer Birthday"></p>
+            <%--            <input type="date" name="dayOfBirth">--%>
         </div>
         <div class="form-floating">
             <select class="form-select" id="floatingSelect" name="gender" aria-label="Floating label select example">
@@ -38,7 +46,7 @@
                 <option value="1">Male</option>
                 <option value="0">Female</option>
             </select>
-<%--            <label for="floatingSelect">Works with selects</label>--%>
+            <%--            <label for="floatingSelect">Works with selects</label>--%>
         </div>
         <div class="input-group">
             <p class="input-group-text"></p>
@@ -50,7 +58,7 @@
         </div>
         <div class="input-group">
             <p class="input-group-text"></p>
-            <input type="text" class="form-control"name="email" placeholder="Email">
+            <input type="text" class="form-control" name="email" placeholder="Email">
         </div>
         <div class="input-group">
             <p class="input-group-text"></p>
@@ -65,18 +73,22 @@
         </div>
     </div>
 </form>
-
+<%
+    } else {
+        response.sendRedirect("login.jsp");
+    }
+%>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
 <script>
-    $(function() {
-        $( "#datepicker" ).datepicker({
-            defaultDate:+9,
+    $(function () {
+        $("#datepicker").datepicker({
+            defaultDate: +9,
             duration: "slow",
-            changeYear:true,
+            changeYear: true,
             minDate: "-80Y",
             maxDate: "-18Y",
             showOtherMonths: true,

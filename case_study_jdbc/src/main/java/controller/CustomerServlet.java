@@ -42,6 +42,7 @@ public class CustomerServlet extends HttpServlet {
     private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         request.setAttribute("customers", customerService.selectByID(id));
+        request.setAttribute("customerTypes", typeService.findAll());
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/edit.jsp");
         try {
             dispatcher.forward(request,response);
@@ -53,13 +54,13 @@ public class CustomerServlet extends HttpServlet {
     private void edit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        String dayOfBirth = request.getParameter("dayOfBirth");
+        String dayOfBirth = request.getParameter("dateOfBirth");
         boolean gender = Boolean.parseBoolean(request.getParameter("gender"));
         String idCard = request.getParameter("idCard");
         String phoneNumber = request.getParameter("phoneNumber");
         String email = request.getParameter("email");
         String address = request.getParameter("customerAddress");
-        int customerTypeID = Integer.parseInt(request.getParameter("customerTypeID"));
+        int customerTypeID = Integer.parseInt(request.getParameter("customerTypeId"));
         Customer customer = new Customer(id,name,dayOfBirth,gender,idCard,phoneNumber,email,address,customerTypeID);
         boolean check = customerService.edit(customer);
 
@@ -92,7 +93,8 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showFormAdd(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher dispatcher =request.getRequestDispatcher("view/customer/create.jsp");
+        request.setAttribute("customerType", typeService.findAll());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/create.jsp");
         try {
             dispatcher.forward(request,response);
         } catch (ServletException | IOException e) {
@@ -133,13 +135,13 @@ public class CustomerServlet extends HttpServlet {
 
     private void addNewCustomer(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("name");
-        String dayOfBirth = request.getParameter("dayOfBirth");
+        String dayOfBirth = request.getParameter("dateOfBirth");
         boolean gender = Boolean.parseBoolean(request.getParameter("gender"));
         String idCard = request.getParameter("idCard");
         String phoneNumber = request.getParameter("phoneNumber");
         String email = request.getParameter("email");
         String address = request.getParameter("customerAddress");
-        int customerTypeID = Integer.parseInt(request.getParameter("customerTypeID"));
+        int customerTypeID = Integer.parseInt(request.getParameter("customerTypeId"));
         Customer customer = new Customer(name,dayOfBirth,gender,idCard,phoneNumber,email,address,customerTypeID);
         boolean check = customerService.add(customer);
         String mess = "thêm mới thành công";

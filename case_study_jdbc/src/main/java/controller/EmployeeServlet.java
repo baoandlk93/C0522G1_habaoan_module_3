@@ -55,6 +55,11 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        request.setAttribute("employee", employeeService.selectByID(id));
+        request.setAttribute("divisions", divisionService.displayAll());
+        request.setAttribute("positions", positionService.displayAll());
+        request.setAttribute("educations", educationService.displayAll());
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/employee/edit.jsp");
         try {
             dispatcher.forward(request,response);
@@ -105,13 +110,14 @@ public class EmployeeServlet extends HttpServlet {
                 edit(request,response);
                 break;
 
+
         }
     }
 
     private void edit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        String dayOfBirth = request.getParameter("dayOfBirth");
+        String dayOfBirth = request.getParameter("dateOfBirth");
         String idCard = request.getParameter("idCard");
         String phoneNumber = request.getParameter("phoneNumber");
         String email = request.getParameter("email");

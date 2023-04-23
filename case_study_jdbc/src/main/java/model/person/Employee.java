@@ -1,11 +1,9 @@
 package model.person;
 
-import java.util.Date;
-
 public class Employee {
     private int id;
     private String name;
-    private String dayOfBirth;
+    private String dateOfBirth;
     private String idCard;
     private double salary;
     private String phoneNumber;
@@ -22,7 +20,7 @@ public class Employee {
     public Employee(int id, String name, String dayOfBirth, String idCard, String phoneNumber, String email, String employeeAddress, int position, int educationDegreeID, int divisionID, double salary) {
         this.id = id;
         this.name = name;
-        this.dayOfBirth = dayOfBirth;
+        this.dateOfBirth = dayOfBirth;
         this.idCard = idCard;
         this.salary = salary;
         this.phoneNumber = phoneNumber;
@@ -47,7 +45,7 @@ public class Employee {
                     String userName) {
         this.id = id;
         this.name = name;
-        this.dayOfBirth = dayOfBirth;
+        this.dateOfBirth = dayOfBirth;
         this.idCard = idCard;
         this.salary = salary;
         this.phoneNumber = phoneNumber;
@@ -61,7 +59,7 @@ public class Employee {
 
     public Employee(String name, String dayOfBirth, String idCard, String phoneNumber, String email, String employeeAddress, int position, int educationDegreeID, int divisionID, double salary) {
         this.name = name;
-        this.dayOfBirth = dayOfBirth;
+        this.dateOfBirth = dayOfBirth;
         this.idCard = idCard;
         this.salary = salary;
         this.phoneNumber = phoneNumber;
@@ -88,12 +86,12 @@ public class Employee {
         this.name = name;
     }
 
-    public String getDayOfBirth() {
-        return dayOfBirth;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDayOfBirth(String dayOfBirth) {
-        this.dayOfBirth = dayOfBirth;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getIdCard() {

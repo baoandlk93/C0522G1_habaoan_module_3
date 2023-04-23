@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class BaseRepository {
     private static final String URL = "jdbc:mysql://localhost:3306/furama_web";
     private static final String USER = "root";
-    private static final String PASS = "habaoan93";
+    private static final String PASS = "12345678";
 
     public static Connection getConnectDB() {
         Connection connection = null;

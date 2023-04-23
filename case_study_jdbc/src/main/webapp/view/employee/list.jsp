@@ -14,6 +14,9 @@
     <script src="datatables/js/dataTables.bootstrap5.min.js"></script>
     <title>Home</title>
     <style>
+        body{
+            overflow-x: hidden;
+        }
         a {
             text-decoration: none;
         }
@@ -27,7 +30,7 @@
 <%@include file="/view/header.jsp" %>
 
 <div class="p-3">
-    <h2 class="text-center fw-bold">CUSTOMER LIST</h2>
+    <h2 class="text-center fw-bold">EMPLOYEE LIST</h2>
 
     <table id="tableStudent" class="table table-striped table-bordered border border-3 border-secondary">
         <thead>
@@ -53,7 +56,7 @@
             <tr>
                 <td class="text-center">${status.count}</td>
                 <td>${employees.name}</td>
-                <td class="text-center">${employees.dayOfBirth}</td>
+                <td class="text-center">${employees.dateOfBirth}</td>
                 <td class="text-center">${employees.idCard}</td>
                 <td class="text-center">${employees.phoneNumber}</td>
                 <td>${employees.email}</td>
@@ -81,7 +84,7 @@
                 <td>
                     <button onclick="objdelete('${employees.id}' ,
                             '${employees.name}',
-                            '${employees.dayOfBirth}',
+                            '${employees.dateOfBirth}',
                             '${employees.idCard}',
                             '${employees.phoneNumber}',
                             '${employees.email}',
@@ -90,7 +93,7 @@
                             '<c:forEach var="positions" items="${positions}"><c:if test="${positions.id == employees.position}">${positions.name}</c:if></c:forEach>',
                             '<c:forEach var="divisions" items="${divisions}"><c:if test="${divisions.id == employees.divisionID}">${divisions.name}</c:if></c:forEach>','${employees.salary}')"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-minus"></i></a>
                     </button>
 
                 </td>
@@ -102,7 +105,7 @@
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <form action="/customer">
+        <form action="/employee">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>

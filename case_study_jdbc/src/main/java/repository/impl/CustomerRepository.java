@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
-    private static final String UPDATE_USERS_SQL = "update customer set name = ?, set date_of_birth = ?, set gender = ?,set id_card = ?, set phone_number = ?, set email = ?, set address = ?,set customer_type_id = ? where id = ? ";
+    private static final String UPDATE_USERS_SQL = "update customer set name = ?,gender = ?,date_of_birth = ?,id_card = ?,phone_number = ?,email = ?, address = ?, customer_type_id = ? where id = ? ";
     private static final String SELECT_ALL = "select * from customer where is_delete = 0;";
     private static final String DELETE = "update customer set is_delete = 1 where id = ?;";
     private static final String SELECT_BY_ID = "select * from customer where id = ?";

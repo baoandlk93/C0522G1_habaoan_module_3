@@ -10,6 +10,4 @@ public class FilterUTF8 implements Filter {
        req.setCharacterEncoding("UTF-8");
         chain.doFilter(req, resp);
     }
-
-
 }
